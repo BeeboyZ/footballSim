@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>161</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;선수 검색&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>500</y>
+     <width>221</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>검색</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>470</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>200</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>470</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>200</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>480</y>
+     <width>21</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>~</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>470</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>이름을 쓰고 엔터를 누르세요</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>270</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="currentText">
+    <string>Any</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Any</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>가나</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>가봉</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>감비아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>과달루프</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>그리스</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>기니</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>나이지리아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>네덜란드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>노르웨이</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>뉴질랜드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>대한민국</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>덴마크</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>독일</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>라트비아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>루마니아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>마르티니크</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>말리</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>멕시코</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>모로코</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>미국</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>베네수엘라</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>벨기에</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>보스니아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>북아일랜드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>브라질</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>빼이 바스크</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>세네갈</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>세르비아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>세인트 루시아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>스웨덴</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>스위스</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>스코틀랜드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>스페인</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>슬로바키아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>시에라리온</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>아르메니아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>아르헨티나</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>아이슬란드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>아일랜드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>알바니아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>오스트리아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>우루과이</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>우크라이나</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>웨일스</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>이란</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>이집트</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>이탈리아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>일본</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>잉글랜드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>자메이카</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>중앙 아프리카</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>칠레</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>카보 베르데</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>캐나다</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>케냐</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>코트디부아르</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>콜롬비아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>콩고 공화국</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>쿠바</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>크로아티아</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>키프로스</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>터키</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>파라과이</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>포르투갈</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>폴란드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>프랑스</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>핀란드</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>호주</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>270</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Any</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AM</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AM C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AM L</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AM LC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AM R</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AM RC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AM RL</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AM RLC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>D C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>D L</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>D LC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>D R</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>D RC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>D RL</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>D RLC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DM</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>F C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>GK</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>M C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>M L</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>M R</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>M RC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ST</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WB L</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WB R</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>WB RL</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>270</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Any</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Norwich City</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Newcastle United</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Leicester City</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Liverpool</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Manchester City</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Manchester United</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Burnley</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bournemouth</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Brighton &amp; Hove</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Southampton</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sheffield United</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Arsenal</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Aston Villa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Everton</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Watford</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Wolverhampton Wanderers</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>West Ham United</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chelsea</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tottenham Hotspur</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Crystal Palace</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>180</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;국가&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>180</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;포지션&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>179</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;팀&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>390</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;능력치 (0~200)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>390</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;이름 (Any로 모든이름)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>570</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>뒤로 가기</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setCountry()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>114</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_2</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setPosition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>486</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_3</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setTeam()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>822</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Dialog</receiver>
+   <slot>setRating()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>492</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_2</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Dialog</receiver>
+   <slot>setRating2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>490</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>272</x>
+     <y>524</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Dialog</receiver>
+   <slot>setName()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>479</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>544</x>
+     <y>514</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>868</x>
+     <y>539</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>869</x>
+     <y>572</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>setCountry()</slot>
+  <slot>setPosition()</slot>
+  <slot>setTeam()</slot>
+  <slot>setRating1()</slot>
+  <slot>setName()</slot>
+  <slot>setRating2()</slot>
+  <slot>search()</slot>
+  <slot>goStart()</slot>
+ </slots>
+</ui>

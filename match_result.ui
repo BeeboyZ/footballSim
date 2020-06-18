@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>231</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;경기 결과&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>250</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;팀 이름&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>340</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>검색</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>340</y>
+     <width>571</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Norwich City</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Newcastle United</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Leicester City</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Liverpool</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Manchester City</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Manchester United</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Burnley</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bournemouth</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Brighton &amp; Hove</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Southampton</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sheffield United</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Arsenal</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Aston Villa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Everton</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Watford</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Wolverhampton Wanderers</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>West Ham United</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chelsea</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tottenham Hotspur</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Crystal Palace</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>550</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>뒤로 가기</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>goMatchResult()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>779</x>
+     <y>372</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>780</x>
+     <y>395</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setTeamName()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>397</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>goMatchResult()</slot>
+  <slot>goStart()</slot>
+  <slot>setTeamName()</slot>
+ </slots>
+</ui>
